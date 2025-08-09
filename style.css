@@ -13,14 +13,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/calming/50_calming.jpg)
+    background: url(image.jpg)
     no-repeat center center/cover;
 
 }
 
 .empty-image {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
 }
 
 .container {
@@ -83,7 +83,7 @@ body {
 #progress{
     width: 0%;
     height: 100%;
-    background: #ff6f91;
+    background: blue;
     border-radius: 20px;
     transition: width 0.3s ease;
 }
@@ -94,7 +94,7 @@ body {
     justify-content: center;
     width: 80px;
     height: 80px;
-    background:#ff6f91;
+    background:blue;
     border: 2px solid rgba(255, 194, 209, 0.3);
     font-weight: bold;
     border-radius: 50%;
@@ -140,7 +140,7 @@ body {
 
 .input-area button:hover {
     transform: scale(1.1);
-    background: #ff6f91;
+    background: blue;
 }
 
 .todos-container{
@@ -233,11 +233,11 @@ body {
 }
 
 .task-buttons .edit-btn{
-    background: #ffbf00;
+    background: teal;
 }
 
 .task-buttons .delete-btn{
-    background: #ff6f91;
+    background:brown;
 }
 
 @media (max-width: 600px) {
