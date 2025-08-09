@@ -36,5 +36,22 @@
 </body>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<div id="digital-clock"> 
+    <script>
+    function pad(n) { return n < 10 ? '0' + n : n; }
+    function updateClock() {
+      const now = new Date();
+      let hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+      const isAM = hours < 12;
+      const displayHour = ((hours + 11) % 12) + 1;
+      document.getElementById('digital-clock').textContent =
+        `${pad(displayHour)}:${pad(minutes)}:${pad(seconds)} ${isAM ? 'AM' : 'PM'}`;
+    }
+    updateClock();
+    setInterval(updateClock, 250);
+  </script>
 
+</div>
 </html>
